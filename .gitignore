@@ -1,0 +1,5 @@
+.DS_Store
+.hugo_build.lock
+content/drafts/*
+content/private/*
+content/posts/*

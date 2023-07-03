@@ -1,0 +1,76 @@
+baseURL = 'http://example.org/'
+languageCode = 'zh-cn'
+title = '沉默之沙'
+theme = 'diary'
+
+description = '云五的自留地'
+
+[Params]
+   favicon = "yukieyun.png"
+
+googleAnalytics = "G-3Q1RKMM6J5"
+disqusShortname = "yukieyun"
+
+
+[taxonomies]
+   category = "categories"
+   tag = "tags"
+
+[outputs]
+   home = ["HTML", "RSS"]
+
+
+[[menu.main]]
+   url = "/monthly-recap"
+   name = "每月小结 Monthly Recap"
+   weight = 1
+
+[[menu.main]]
+   url = "/nonsense"
+   name = "瞎扯淡 Nonsense"
+   weight = 2
+
+[[menu.main]]
+   url = "/tech"
+   name = "技术 Technology"
+   weight = 3
+
+[[menu.main]]
+   url = "/reading"
+   name = "读书 Reading"
+   weight = 4
+
+[[menu.main]]
+   url = "/watching"
+   name = "影视 Watching"
+   weight = 5
+
+[[menu.main]]
+   url = "/fitness"
+   name = "健身 Fitness"
+   weight = 6
+
+[[menu.main]]
+   url = "/roam"
+   name = "漫游 Roam"
+   weight = 7
+
+[[menu.main]]
+   url = "/takeaway"
+   name = "微末的人生经验 Takeaway"
+   weight = 8
+
+[[menu.main]]
+   url = "/"
+   name = "——————"
+   weight = 13
+
+[[menu.main]]
+   url = "/index.xml"
+   name = "订阅 RSS"
+   weight = 90
+
+[[menu.main]]
+   url = "/friends"
+   name = "友情链接"
+   weight = 99
