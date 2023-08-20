@@ -7,6 +7,7 @@ description = '云五的自留地'
 
 [Params]
    favicon = "yukieyun.png"
+   enableReadingTime=true
 
 googleAnalytics = "G-3Q1RKMM6J5"
 disqusShortname = "yukieyun"
