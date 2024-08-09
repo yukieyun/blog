@@ -21,6 +21,7 @@
                 <div class="post-title">
                     {{ .Title }}
                     <div class="post-meta">
+                        Author: {{ .Params.author }} <br />
                         {{ if .Params.date}}
                         <time itemprop="datePublished">
                             {{ i18n "format_date_tosec" .PublishDate }}

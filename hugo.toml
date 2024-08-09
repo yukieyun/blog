@@ -1,8 +1,7 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://yukieyun.net/'
 languageCode = 'zh-cn'
-title = '沉默之沙'
+title = '沉默之沙 - 云五的自留地'
 theme = 'diary'
-
 description = '云五的自留地'
 
 [Params]
