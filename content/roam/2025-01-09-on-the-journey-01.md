@@ -2,7 +2,7 @@
 title: 当我旅游时我在……(1)
 author: 云五
 type: post
-date: 2025-01-09T12:49:13+00:00
+date: 2025-01-09T12:49:14+00:00
 description: |
   晚上回到北京住处，同学很震惊我提前半夜回来了，问我怎么敢就这样坐黑车，不怕路上被抢劫吗？
 url: /roam/on-the-journey-01/
