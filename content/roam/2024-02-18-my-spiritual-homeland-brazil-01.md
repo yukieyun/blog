@@ -8,6 +8,7 @@ description: |
 url: /roam/my-spiritual-homeland-brazil-01/
 categories:
   - 漫游
+tags:
   - 精神故乡
   - 巴西
   - 圣保罗
