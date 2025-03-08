@@ -1,21 +1,19 @@
 <head>
-<title>{{.Title}}</title>
+<title>{{.Title}} | {{.Site.Params.description}} | 博客</title>
 <link rel="alternate"
       type="application/rss+xml"
       href="{{.Site.BaseURL }}/index.xml"
-      title="{{ .Site.Title }}">
+      title="{{ .Site.Title }} - {{.Site.Params.description}}">
 
 {{ $description := .Params.description}}
-{{if .IsHome}}
-  {{ $description = .Site.Params.description}}
-{{end}}
+{{ $description = .Site.Params.description}}
 
 <meta charset="utf-8">
 <meta name="X-UA-Compatible" content="IE=edge">
 <meta name="google-site-verification" content="{{ .Site.Params.googleSiteVerification }}">
 <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 <meta content="telephone=no" name="format-detection">
-<meta name="description" content="{{ $description }}">
+<meta name="description" content="{{ .Site.Params.description }}">
 <meta name="renderer" content="webkit">
 <meta name="theme-color" content="#ffffff">
 
