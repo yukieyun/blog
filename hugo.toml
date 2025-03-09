@@ -10,7 +10,10 @@ theme = 'diary'
    description = '云五的自留地'
    subtitle = '云五的自留地'
 
-GoogleAnalytics = "G-3Q1RKMM6J5"
+[services]
+  [services.googleAnalytics]
+    ID = 'G-3Q1RKMM6J5'
+
 disqusShortname = "yukieyun"
 
 
