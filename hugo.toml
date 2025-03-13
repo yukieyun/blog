@@ -10,16 +10,11 @@ theme = 'diary'
    description = '云五的自留地'
    subtitle = '云五的自留地'
 
+disqusShortname = "yukieyun"
+
 [services]
   [services.googleAnalytics]
     ID = 'G-3Q1RKMM6J5'
-
-disqusShortname = "yukieyun"
-
-[Author]
-   name = "云五"
-   email = "yukie.yun@gmail.com"
-
 
 [taxonomies]
    category = "categories"
