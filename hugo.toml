@@ -16,6 +16,10 @@ theme = 'diary'
 
 disqusShortname = "yukieyun"
 
+[Author]
+   name = "云五"
+   email = "yukie.yun@gmail.com"
+
 
 [taxonomies]
    category = "categories"
