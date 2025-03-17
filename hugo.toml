@@ -9,6 +9,7 @@ theme = 'diary'
    enableReadingTime=true
    description = '云五的自留地'
    subtitle = '云五的自留地'
+   googleSearchCode = "95a72166ad742489e"
 
 disqusShortname = "yukieyun"
 
