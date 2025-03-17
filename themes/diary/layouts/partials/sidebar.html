@@ -1,4 +1,10 @@
 <div id="sideContainer" class="side-container">
+    <div>
+        {{ if and (isset .Site.Params "googlesearchcode")}}
+        <script async src="https://cse.google.com/cse.js?cx={{.Site.Params.googleSearchCode}}"></script>
+        <div class="gcse-searchbox-only" mobileLayout="true"></div>
+        {{ end }}
+    </div>
     {{ if eq .Title .Site.Title}}
     <a class="a-block nav-head active" href="{{ "" | absLangURL }}">
     {{ else }}

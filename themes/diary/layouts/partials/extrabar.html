@@ -1,10 +1,5 @@
 <div id="extraContainer" class="extra-container">
     <div class="toc-wrapper">
-        {{ if and (isset .Site.Params "googlesearchcode") (.IsHome) }}
-        <script async src="https://cse.google.com/cse.js?cx={{.Site.Params.googleSearchCode}}"></script>
-        <div class="gcse-searchbox-only" mobileLayout="true"></div>
-        {{ end }}
-
         {{ if and (not (.Params.disableToC) ) (.IsPage) }}
         <div class="toc">
             {{- partial "toc.html" . -}}
@@ -25,9 +20,8 @@
             </span>
         </a>
         {{ end }}
-        {{ if and (.Paginator) (not (.Data.Terms)) }}
+        {{ if and (or (eq .Kind "section") (eq .Kind "taxonomy") (eq .Kind "home")) (not (.Data.Terms)) }}
         {{ if gt .Paginator.TotalPages 1 }}
-
         <a class="pagination-action" {{ if .Paginator.HasPrev }} href="{{.Paginator.Prev.URL}}">
             {{ else }}
             style="visibility:hidden">
