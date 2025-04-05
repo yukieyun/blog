@@ -69,6 +69,9 @@ tags:
 
 白堤苏堤赵公堤，岳庙于谦祠苏小小，各种故居，各种博物馆，有名没名的地方，全都安排上！人到了一个地方长住，这里的景点就会失去珍贵性——我在杭州的生活很好证明了这一点。工作安顿下来后的两年里风卷残云般把上述景点扫过一遍后，连西湖都去得少了。
 
+于谦祠
+![于谦祠](https://media.go5.dev/go5media/media_attachments/files/114/286/598/097/947/521/original/08a972ab58289623.jpeg)
+
 稍微数数我比较有印象的地方吧：
 
 - 陶瓷博物馆，aka 杭州南宋官窑博物馆
@@ -91,12 +94,11 @@ tags:
 
 ---
 
-出门没带有古早照片的硬盘，但博客不配图我浑身不舒服，提前来张吴哥窟吧！
+整理了一个系列目录
 
-Angkor Wat
-
-![Angkor Wat](https://media.go5.dev/go5media/media_attachments/files/113/864/086/896/860/232/original/8c9d60dd78abb832.png)
-
-
+- [当我旅游时我在……(1)](/roam/on-the-journey-01/)
+- [当我旅游时我在……(2)](/roam/on-the-journey-02/)
+- [当我旅游时我在……(3)](/roam/on-the-journey-03/)
+- [当我旅游时我在……(4)](/roam/on-the-journey-04/)
 
 
