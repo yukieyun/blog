@@ -46,7 +46,14 @@ Company B 是一家规模还不到100人的Startup，他们做的是 to B 的业
 还有一家是澳洲的农业科技公司，我从来没有接触过这类公司，很想去看看农业科技公司到底是做什么的。他们的 CTO 和我聊过后觉得我的技术经验也是吻合的，结果过了两周 recruiter 通知我说这家公司的职位取消了。
 
 
+----
 
+打工记系列：
+- [打工记（一）](/roam/gravedigger-of-capitalism-01/)
+- [打工记（二）](/roam/gravedigger-of-capitalism-02/)
+- [打工记（三）](/roam/gravedigger-of-capitalism-03/)
+- [打工记（四）](/roam/gravedigger-of-capitalism-04/)
+- [打工记（五）](/roam/gravedigger-of-capitalism-05/)
 
 
 

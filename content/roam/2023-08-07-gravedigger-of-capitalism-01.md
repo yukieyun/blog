@@ -55,3 +55,11 @@ tags:
 这家起初签的是短期合同，续了一次约，加了一点钱，后来他们想再续，但此时我找到了另一份时薪更高的临时工，就果断和这家say byebye了。一年后我搜了一下，当时同组的同事有一半跳槽了，公司还活着。
 
 
+----
+
+打工记系列：
+- [打工记（一）](/roam/gravedigger-of-capitalism-01/)
+- [打工记（二）](/roam/gravedigger-of-capitalism-02/)
+- [打工记（三）](/roam/gravedigger-of-capitalism-03/)
+- [打工记（四）](/roam/gravedigger-of-capitalism-04/)
+- [打工记（五）](/roam/gravedigger-of-capitalism-05/)

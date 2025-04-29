@@ -66,7 +66,14 @@ https://www.businessinsider.com/us-companies-are-nearshoring-cheaper-workers-fro
 Company D 暂时写不了，因为还没结束。
 
 
+----
 
+打工记系列：
+- [打工记（一）](/roam/gravedigger-of-capitalism-01/)
+- [打工记（二）](/roam/gravedigger-of-capitalism-02/)
+- [打工记（三）](/roam/gravedigger-of-capitalism-03/)
+- [打工记（四）](/roam/gravedigger-of-capitalism-04/)
+- [打工记（五）](/roam/gravedigger-of-capitalism-05/)
 
 
 

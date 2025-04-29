@@ -58,8 +58,11 @@ tags:
 以为就漏写了“一点”，结果哐哐又啰嗦了这么多，第二家客户就只有下一期再写了，下一家客户是 to B 的医保管理公司。
 
 
+----
 
-
-
-
-
+打工记系列：
+- [打工记（一）](/roam/gravedigger-of-capitalism-01/)
+- [打工记（二）](/roam/gravedigger-of-capitalism-02/)
+- [打工记（三）](/roam/gravedigger-of-capitalism-03/)
+- [打工记（四）](/roam/gravedigger-of-capitalism-04/)
+- [打工记（五）](/roam/gravedigger-of-capitalism-05/)
