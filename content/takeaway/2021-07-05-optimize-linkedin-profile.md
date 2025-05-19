@@ -56,6 +56,8 @@ LinkedIn上被搜索到，有几个地方比较关键：connection 数量和 hea
 
   2. Headline + Current title + Skills 里的关键词要到位。比如后端，自己的编程语言、最熟悉的框架，都给码到headline里去，用分割线稍微分割一下。Skills 里怎么找重点关键词，有一个技巧：开通一个 linkedin premium 试用（后面cancel掉，这个没用），看看你要找的工作需要的 skills ，重合最多的几样，都写到你的skills里去；如果发现有你不会的，说明是近期要突击的技术重点。
 
+  3. 2025年更新：设置 Open to Work - LinkedIn 的设置 Open to Work 有两种，一种是只显示给 recruiter 但不给头像挂绿色的 Open to Work 标志；一种是全部打开挂绿色标志让所有人都能看到。是否要挂绿色标志大家随意（以前有人不爱通过挂 Open to work 的人，但现在 layoff 多了大家也没那么介意了），但至少要打开 Open to work 给 recruiter 看到。
+
 
 ### 提高被搜索到之后的转化率
 
