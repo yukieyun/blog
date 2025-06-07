@@ -79,3 +79,10 @@ disqusShortname = "yukieyun"
    url = "/friends"
    name = "友情链接"
    weight = 99
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
