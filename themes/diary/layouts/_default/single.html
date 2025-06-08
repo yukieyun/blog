@@ -79,7 +79,7 @@
             </div>
             
             <!-- Ko-fi Support Banner -->
-            {{ if eq .Type "post" }}
+            {{ if or (eq .Type "post") (eq .Title "About Me") }}
             <div class="kofi-container" style="text-align: center; margin: 2em 0;">
                 <p style="margin-bottom: 1em; color: #666;">如果你觉得我的博客对你有帮助，欢迎</p>
                 <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
