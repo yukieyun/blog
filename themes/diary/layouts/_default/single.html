@@ -87,8 +87,8 @@
             </div>
             {{ end }}
             
+            {{ if eq .Type "post" }}
             <nav class="post-pagination">
-
                 {{if .Next}}
                 <a class="newer-posts" href="{{.Next.RelPermalink}}">
 			{{ i18n "next_link" }}<br>{{.Next.Title}}
@@ -109,6 +109,7 @@
                 </a>
                 {{end}}
             </nav>
+            {{ end }}
             <div class="post-comment-wrapper">
                 {{ if eq .Params.comment false }}
                 <p style="opacity: 0.6" align="center">
