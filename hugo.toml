@@ -24,61 +24,83 @@ disqusShortname = "yukieyun"
 [outputs]
    home = ["HTML", "RSS"]
 
+[[menu.main]]
+   url = "/about"
+   name = "关于我 About"
+   weight = 1
+   identifier = "about"
 
 [[menu.main]]
    url = "/monthly-recap"
    name = "每月小结 Monthly Recap"
-   weight = 1
+   weight = 11
+   parent = "categories"
 
 [[menu.main]]
    url = "/nonsense"
    name = "瞎扯淡 Nonsense"
-   weight = 2
+   weight = 12
+   parent = "categories"
 
 [[menu.main]]
    url = "/tech"
    name = "技术 Technology"
-   weight = 3
+   weight = 13
+   parent = "categories"
 
 [[menu.main]]
    url = "/reading"
    name = "读书 Reading"
-   weight = 4
+   weight = 14
+   parent = "categories"
 
 [[menu.main]]
    url = "/watching"
    name = "影视 Watching"
-   weight = 5
+   weight = 15
+   parent = "categories"
 
 [[menu.main]]
    url = "/fitness"
    name = "健身 Fitness"
-   weight = 6
+   weight = 16
+   parent = "categories"
 
 [[menu.main]]
    url = "/roam"
    name = "漫游 Roam"
-   weight = 7
+   weight = 17
+   parent = "categories"
 
 [[menu.main]]
    url = "/takeaway"
    name = "微末的人生经验 Takeaway"
-   weight = 8
+   weight = 18
+   parent = "categories"
 
 [[menu.main]]
-   url = "/"
-   name = "——————"
-   weight = 13
+   name = "Categories"
+   weight = 10
+   identifier = "categories"
 
 [[menu.main]]
    url = "/index.xml"
    name = "订阅 RSS"
-   weight = 90
+   weight = 91
+   parent = "links"
 
 [[menu.main]]
    url = "/friends"
    name = "友情链接"
-   weight = 99
+   weight = 92
+   parent = "links"
+
+[[menu.main]]
+   name = "Links"
+   weight = 90
+   identifier = "links"
+
+
 
 
 [markup]

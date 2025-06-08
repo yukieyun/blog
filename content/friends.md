@@ -2,7 +2,6 @@
 title: 友情链接们！
 author: 云五
 type: page
-date: 2000-06-19T00:00:00+00:00
 url: /friends
 comment: false
 ---

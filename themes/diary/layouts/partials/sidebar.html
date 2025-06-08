@@ -25,31 +25,29 @@
     <div class="nav-link-list">
         {{ $current := .RelPermalink | absLangURL }}
         {{ range .Site.Menus.main }}
-            {{$actived := "false"}}
-            <!-- A problem caused by slash: if you use "eq" directly, you will get a result of "/tags/" and "/tags" -->
-            {{if hasPrefix  $current (.URL|absLangURL)}}
-                {{$actived = "active"}}
-            {{end}}
-            {{ if .HasChildren }}
-            <div class="a-block" class="nav-link-item {{$actived}}" v-on:click="isHidden = !isHidden">
-                {{ .Name }}
-                <div class="nav-link-subitem" v-if="!isHidden">
+            {{ if not .HasChildren }}
+                {{$actived := "false"}}
+                {{if hasPrefix  $current (.URL|absLangURL)}}
+                    {{$actived = "active"}}
+                {{end}}
+                <a class="a-block nav-link-item {{ $actived }}" href="{{ .URL }}" data-nav-link>
+                    {{ .Name }}
+                </a>
+            {{ else }}
+                <div class="nav-section">
+                    <div class="nav-section-title">{{ .Name }}</div>
                     {{ range .Children }}
-                    <li><a href="{{ .URL }}"> {{ .Name }}</a></li>
+                        {{$actived := "false"}}
+                        {{if hasPrefix  $current (.URL|absLangURL)}}
+                            {{$actived = "active"}}
+                        {{end}}
+                        <a class="a-block nav-link-item {{ $actived }}" href="{{ .URL }}" data-nav-link>
+                            {{ .Name }}
+                        </a>
                     {{ end }}
                 </div>
-            </div>
-            {{ else }}
-            <!--<a class="a-block nav-link-item {{$actived}}" href="{{ .URL }}">-->
-            <a class="a-block nav-link-item {{ $actived }}" href="{{ .URL }}">
-                {{ .Name }}
-            </a>
             {{ end }}
         {{ end }}
-        <div>
-        <a rel="me" class="a-block nav-link-item" href="https://go5.dev/@yun5s">我的Mastodon</a>
-        </div>
-
     </div>
 
     
@@ -59,3 +57,42 @@
     </div>
     
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('[data-nav-link]');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const href = this.getAttribute('href');
+            
+            // Update active states
+            navLinks.forEach(l => l.classList.remove('active'));
+            this.classList.add('active');
+            
+            // Update URL without page reload
+            window.history.pushState({}, '', href);
+            
+            // Fetch and update content
+            fetch(href)
+                .then(response => response.text())
+                .then(html => {
+                    const parser = new DOMParser();
+                    const doc = parser.parseFromString(html, 'text/html');
+                    const newContent = doc.querySelector('.stream-container');
+                    const currentContent = document.querySelector('.stream-container');
+                    
+                    if (newContent && currentContent) {
+                        currentContent.innerHTML = newContent.innerHTML;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error fetching content:', error);
+                    // Fallback to normal navigation if fetch fails
+                    window.location.href = href;
+                });
+        });
+    });
+});
+</script>

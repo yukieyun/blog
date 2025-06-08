@@ -2,7 +2,7 @@
     {{ i18n "format_date" .PublishDate }}
     &emsp;
     <!-- Reading Time Start -->
-    {{ if .Site.Params.enableReadingTime }}
+    {{ if and .Site.Params.enableReadingTime (not (eq .Type "page")) }}
     <i class="material-icons" style="font-size:10px">schedule</i>
     {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
 

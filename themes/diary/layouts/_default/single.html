@@ -21,7 +21,9 @@
                 <div class="post-title">
                     {{ .Title }}
                     <div class="post-meta">
+                        {{ if eq .Type "post" }}
                         Author: {{ .Params.author }} <br />
+                        {{ end }}
                         {{ if .Params.date}}
                         <time itemprop="datePublished">
                             {{ i18n "format_date_tosec" .PublishDate }}
@@ -46,7 +48,7 @@
                             {{ end }}
                             <br />
                         {{ end }}
-                        {{ if .Site.Params.enableReadingTime }}
+                        {{ if and .Site.Params.enableReadingTime (not (eq .Type "page")) }}
                             <i class="material-icons" style="">schedule</i>
                             {{ $readTime := mul (div (countwords .Content) 220.0) 60 }}
 
@@ -76,6 +78,14 @@
                 </div>
             </div>
             
+            <!-- Ko-fi Support Banner -->
+            {{ if eq .Type "post" }}
+            <div class="kofi-container" style="text-align: center; margin: 2em 0;">
+                <p style="margin-bottom: 1em; color: #666;">如果你觉得我的博客对你有帮助，欢迎</p>
+                <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script>
+                <script type='text/javascript'>kofiwidget2.init('请我喝杯咖啡 ☕️', '#72a4f2', 'T6T833J3F');kofiwidget2.draw();</script>
+            </div>
+            {{ end }}
             
             <nav class="post-pagination">
 

@@ -3,6 +3,13 @@ $color-accent: #2486b9;
 $back-container-background: #fcfcfc;
 $front-container-background: #ffffff;
 
+// Navigation variables
+$nav-item-hover-background-alpha: 0.02;
+$nav-item-hover-indicator-alpha: 0.6;
+$nav-item-hover-color-darken: 30%;
+$nav-item-active-background-alpha: 0.03;
+$nav-item-active-color-darken: 20%;
+
 $default-font-list: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
   "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -60,6 +67,7 @@ $h-diff: 3px;
 
 html {
   overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -189,6 +197,8 @@ a {
 .a-block {
   display: block;
   text-decoration: none !important;
+  min-height: 1.5em;
+  line-height: 1.5em;
   &:hover {
     text-decoration: none !important;
   }
@@ -430,16 +440,16 @@ a {
   text-align: right;
   font-family: $sans-preferred-font-list;
   padding: 20px 0 50px 0;
-  //overflow-x: hidden;
-  //overflow-y: hidden;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  $nav-item-hover-background-alpha: 0.02;
-  $nav-item-hover-indicator-alpha: 0.6;
-  $nav-item-hover-color-darken: 30%;
-  $nav-item-active-background-alpha: 0.03;
-  $nav-item-active-color-darken: 20%;
+
+  // Fix for Google search bar
+  > div:first-child {
+    height: 40px;
+    margin-bottom: 20px;
+  }
+
   .nav-head {
     padding: 30px 28px 30px 20px;
     cursor: hand;
@@ -469,6 +479,8 @@ a {
   }
   .nav-link-list {
     flex-grow: 1;
+    position: relative;
+    min-height: 100px;
     .nav-link-item {
       font-size: $nav-link-size;
       margin-bottom: 10px;
@@ -477,26 +489,18 @@ a {
       cursor: hand;
       cursor: pointer;
       color: $deep-dark-accent;
-      .nav-link-subitem {
-        font-size: $nav-link-size - 3px;
-        li {
-          list-style: none;
-          padding-left: 2px;
-        }
-        a {
-          text-decoration: none;
-        }
-      }
+      transition: all 0.2s ease;
+      
       &:hover {
-        border-right: 2px solid
-          rgba($color-accent, $nav-item-hover-indicator-alpha);
-        background: rgba($color-accent, $nav-item-hover-background-alpha);
-        color: darken($color-accent, $nav-item-hover-color-darken);
+        border-right-color: rgba($color-accent, 0.6);
+        background: rgba($color-accent, 0.02);
+        color: darken($color-accent, 30%);
       }
+      
       &.active {
-        border-right: 2px solid $color-accent;
-        background: rgba($color-accent, $nav-item-active-background-alpha);
-        color: darken($color-accent, $nav-item-active-color-darken);
+        border-right-color: $color-accent;
+        background: rgba($color-accent, 0.03);
+        color: darken($color-accent, 20%);
       }
     }
   }
@@ -1106,4 +1110,76 @@ mjx-container {
   .tag {
     margin: 10px;
   }
+}
+
+.nav-section {
+    margin: 0.3em 0;
+    padding: 0.2em 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+    // Special styling for categories section
+    &:has(.nav-section-title:contains("Categories")) {
+        background-color: rgba(0, 0, 0, 0.02);
+        border-left: 3px solid $color-accent;
+        margin: 0.3em 0;
+        padding: 0.1em 0;
+    }
+}
+
+.nav-section-title {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 0.1em;
+    padding: 0 0.8em;
+
+    // Special styling for Categories title
+    &:contains("Categories") {
+        color: $color-accent;
+        font-weight: 500;
+        font-size: 0.95em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.05em;
+    }
+}
+
+.nav-link-item {
+    padding: 0.1em 0.8em;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.2s ease;
+    font-size: 0.85em;
+    line-height: 1.1;
+    
+    // Special styling for category links
+    .nav-section:has(.nav-section-title:contains("Categories")) & {
+        padding: 0.05em 0.8em 0.05em 1.2em;
+        margin: 0;
+        
+        &:before {
+            content: "•";
+            position: absolute;
+            left: 0.6em;
+            color: $color-accent;
+            font-size: 0.9em;
+            transition: color 0.2s ease;
+        }
+    }
+    
+    &:hover {
+        color: $color-accent;
+        
+        &:before {
+            color: darken($color-accent, 10%);
+        }
+    }
+    
+    &.active {
+        color: $color-accent;
+        font-weight: 500;
+        
+        &:before {
+            color: darken($color-accent, 10%);
+        }
+    }
 }
