@@ -25,7 +25,9 @@ type: "page"
 <script type='text/javascript'>kofiwidget2.init('请我喝杯咖啡 ☕️', '#72a4f2', 'T6T833J3F');kofiwidget2.draw();</script>
 </div> 
 
+## RSS 订阅
 
+[RSS 订阅](https://yukieyun.net/index.xml)
 
 
 
