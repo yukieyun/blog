@@ -30,7 +30,7 @@
                 {{if hasPrefix  $current (.URL|absLangURL)}}
                     {{$actived = "active"}}
                 {{end}}
-                <a class="a-block nav-link-item {{ $actived }}" href="{{ .URL }}" data-nav-link>
+                <a class="a-block nav-link-item {{ $actived }}" href="{{ .URL }}">
                     {{ .Name }}
                 </a>
             {{ else }}
@@ -41,7 +41,7 @@
                         {{if hasPrefix  $current (.URL|absLangURL)}}
                             {{$actived = "active"}}
                         {{end}}
-                        <a class="a-block nav-link-item {{ $actived }}" href="{{ .URL }}" data-nav-link>
+                        <a class="a-block nav-link-item {{ $actived }}" href="{{ .URL }}">
                             {{ .Name }}
                         </a>
                     {{ end }}
@@ -50,55 +50,8 @@
         {{ end }}
     </div>
 
-    
-
     <div class="nav-footer">
         {{partial "copyright.html" .}}
     </div>
     
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const navLinks = document.querySelectorAll('[data-nav-link]');
-    
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            
-            // Handle external links and RSS feeds normally
-            if (href.startsWith('http') || href.endsWith('.xml') || href.includes('//')) {
-                return true; // Let the default link behavior happen
-            }
-            
-            e.preventDefault();
-            
-            // Update active states
-            navLinks.forEach(l => l.classList.remove('active'));
-            this.classList.add('active');
-            
-            // Update URL without page reload
-            window.history.pushState({}, '', href);
-            
-            // Fetch and update content
-            fetch(href)
-                .then(response => response.text())
-                .then(html => {
-                    const parser = new DOMParser();
-                    const doc = parser.parseFromString(html, 'text/html');
-                    const newContent = doc.querySelector('.stream-container');
-                    const currentContent = document.querySelector('.stream-container');
-                    
-                    if (newContent && currentContent) {
-                        currentContent.innerHTML = newContent.innerHTML;
-                    }
-                })
-                .catch(error => {
-                    console.error('Error fetching content:', error);
-                    // Fallback to normal navigation if fetch fails
-                    window.location.href = href;
-                });
-        });
-    });
-});
-</script>
