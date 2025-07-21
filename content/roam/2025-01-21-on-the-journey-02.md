@@ -100,5 +100,6 @@ tags:
 - [当我旅游时我在……(2)](/roam/on-the-journey-02/)
 - [当我旅游时我在……(3)](/roam/on-the-journey-03/)
 - [当我旅游时我在……(4)](/roam/on-the-journey-04/)
+- [当我旅游时我在……(5)](/roam/on-the-journey-05/)
 
 
