@@ -1,4 +1,4 @@
-baseURL = 'http://yukieyun.net/'
+baseURL = 'https://yukieyun.net/'
 languageCode = 'zh-cn'
 title = '沉默之沙'
 theme = 'diary'
