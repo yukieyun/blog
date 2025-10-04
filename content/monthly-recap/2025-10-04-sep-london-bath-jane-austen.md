@@ -89,7 +89,7 @@ Jane Austen 在 Bath 住过几年，Persuasion 和 Northanger Abbey 的故事发
 
 展馆实在太多，这次就主逛三楼，其中 Sutton Hoo Ship Burial 的展馆上次就逛过，但我实在太喜欢这个头盔了，忍不住又逛了一遍。
 
-这张里的头盔是复制品，它旁边有一个没有那么亮锃锃锈迹斑斑的才是真正挖出来的，但这个复制品太有型，我甚至上淘宝搜了一下有没有周边……（没有）
+这张里的头盔是复制品，它旁边有一个没有那么亮锃锃、锈迹斑斑的才是真正挖出来的，但这个复制品太有型，我甚至上淘宝搜了一下有没有周边……（没有）
 
 ![A Replica of the Sutton Hoo Helmet](https://media.go5.dev/go5media/media_attachments/files/115/313/199/888/432/794/original/24258b7d6c5e3451.jpeg)
 
