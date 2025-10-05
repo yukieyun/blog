@@ -106,7 +106,7 @@ Covent Garden 附近的阿婆纪念像
 ![Agatha Christie](https://media.go5.dev/go5media/media_attachments/files/115/185/665/487/739/842/original/635ef5f4f39690cd.jpeg)
 
 
-## Russel Square 附近的名人故居
+## Russel Square 附近的故居们
 
 46 Gordon Square 
 
