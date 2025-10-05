@@ -95,6 +95,31 @@ Jane Austen 在 Bath 住过几年，Persuasion 和 Northanger Abbey 的故事发
 
 喜欢的馆有点多一时记不住，打算下次去把下面的展馆逛一遍，然后再逛三楼喜欢的馆。
 
+## 阿加莎克里斯蒂 Agatha Christie
+
+在朋友家附近看到路边的一块墙的装饰
+
+![Agatha Christie](https://media.go5.dev/go5media/media_attachments/files/115/179/178/707/336/753/original/37f40d30fba2d464.jpeg)
+
+Covent Garden 附近的阿婆纪念像
+
+![Agatha Christie](https://media.go5.dev/go5media/media_attachments/files/115/185/665/487/739/842/original/635ef5f4f39690cd.jpeg)
+
+
+## Russel Square 附近的名人故居
+
+46 Gordon Square 
+
+拜拜这个凯恩斯，平安度过每个经济周期。
+
+这里最早是伍尔夫和她姐妹住的地方，凯恩斯从1916年租下一直住到1946年去世。
+
+![46 Gordon Square](https://media.go5.dev/go5media/media_attachments/files/115/213/608/904/828/926/original/9759d19c8f7aa228.jpg)
+
+在附近又发现了叶芝住过的地方。
+
+![William Butler Yeats](https://media.go5.dev/go5media/media_attachments/files/115/213/703/464/983/814/original/2d9d2df571f7ab9f.jpg)
+
 
 ## 思维盲区！
 
