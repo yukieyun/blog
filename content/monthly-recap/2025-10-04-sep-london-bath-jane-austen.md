@@ -65,9 +65,6 @@ tags:
 
 ![散修](https://media.go5.dev/go5media/media_attachments/files/115/324/258/977/446/416/original/fdfc4f9bf07a1276.jpeg)
 
-
-![Jane Austen Festival Parade](https://media.go5.dev/go5media/media_attachments/files/115/313/199/975/311/895/original/8b7eff05e14b2846.jpeg)
-
 队伍前面还是比较整齐有节奏的，走到后面就开始有散修们加入，整条队伍变得越来越长，还会不断停下来供路人们拍照。
 
 ![Jane Austen Festival Parade](https://media.go5.dev/go5media/media_attachments/files/115/313/199/799/848/093/original/124c70011bec1c4a.jpeg)
