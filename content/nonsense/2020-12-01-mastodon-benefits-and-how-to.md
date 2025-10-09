@@ -13,7 +13,7 @@ categories:
 tags:
   - Mastodon
   - 长毛象
-
+comment: false
 ---
 
 ![Mastodon](https://media.go5.dev/go5dev/media_attachments/files/105/300/662/644/871/914/small/d2d7bf30b9e45b63.png)
