@@ -149,9 +149,10 @@ Kindle 和 Boox Lumia MAX 也带上了，临行前在里面备好了荒岛生存
 
 这个月大部分时间都在哥斯达黎加，但有一周去了盐湖城参加公司团建。打这份工时就打定主意不要参加 offsite，后来决定来是因为盐湖城是我的上古花滑CP 别列日纳娅和西哈鲁利泽 2002年冬奥会登顶之地，这里也再次推广一下我的绝美CP Elena Berezhnaya & Anton Sikharulidze 
 
-<br/>
 
 {{< youtube sqOd-Lx-xhQ >}}
+
+<br/>
 
 
 团建大部分内容很无聊，可以概括为：
